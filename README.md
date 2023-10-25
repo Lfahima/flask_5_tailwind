@@ -44,6 +44,7 @@ For my design rationale I kept height at full and width at full so the video cou
 #### I chose to deploy using Azure, since I was already using Azure. 
 #### I used Visual Studio Code instead of Cloud Shell for this assignment because my Cloud Shell was not cooperating and I prefer to use Visual Studio Code, it is much more user friendly and I like how everything is organized. 
 #### I went back to lecture slides 2, that had all the steps for Azure and GCP deployment. 
+### Steps:
 1. I first had to connect my VSC to my Azure acount, so I copied this link: https://fahima-cdn.azureedge.net/fahima-flask-apps/IMG_4921.MOV and hit enter.
 2. This link gave me another link that I had to click into, and a code that I had to enter into the the other link provided.
 3. I then typed az to make sure my Azure and VSC were connected.
@@ -60,3 +61,8 @@ yoursubscriptionId (I pasted the ID towards the end where it says yoursubscripti
 
   
 ## Your observations and benefits of using a CDN and cloud deployment.
+My observation and benefits of using a CDN amd cloud deployment was that it was very easy to upload a picture and a video to my flask app and I did not face any errors while doing so. 
+
+
+## Any challenges encountered and how you addressed them.
+The only challenge I encountered was when I tried to upload my video to github, it gave me an errorr stating I was unable to upload since my video was too long. I did some research and had to compress my video so it would fit and be uploaded to github. I used two different websites to compress my videos and it worked. The video was less then 10 mg and I was able to upload to github.  
