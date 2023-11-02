@@ -50,19 +50,21 @@ For my design rationale I kept height at full and width at full so the video cou
 #### I used Visual Studio Code instead of Cloud Shell for this assignment because my Cloud Shell was not cooperating and I prefer to use Visual Studio Code, it is much more user friendly and I like how everything is organized. 
 #### I went back to lecture slides 2, that had all the steps for Azure and GCP deployment. 
 ### Steps:
-1. I first had to connect my VSC to my Azure acount, so I copied this link: https://fahima-cdn.azureedge.net/fahima-flask-apps/IMG_4921.MOV and hit enter.
-2. This link gave me another link that I had to click into, and a code that I had to enter into the the other link provided.
+1. I first had to connect my VSC to my Azure acount, so I went into this url: https://learn.microsoft.com/en-us/cli/azure/install-azure-cli-linux?pivots=apt
+2. This url gave me a command that I pasted into my terminal: curl -sL https://aka.ms/InstallAzureCLIDeb | sudo bash
+   (this command is used to install azure).
 3. I then typed az to make sure my Azure and VSC were connected.
 4. I then copied and pasted this code to login: az login --use-device-code  and hit enter.
-5. I followed by pasting this code to get the azzure student subscription ID: az account list --output table  and hit enter.
-6. I copied the last subscriptionID which was linked to Azure for students and I pasted it into this code: az account set --subscription
+5. I was provided with another url and a code in my terminal. I followed by copying the code and clicking into the url. I pasted the code in the spave provided.
+6. To get the azure student subscription ID I used this code: az account list --output table  and hit enter.
+8. I copied the last subscriptionID which was linked to Azure for students and I pasted it into this code: az account set --subscription
 yoursubscriptionId (I pasted the ID towards the end where it says yoursubscriptionId)
-7. I had already used an old resource group.
-8. Finally, I pasted this code: az webapp up --resource-group <groupname> --name <app-name> --runtime <PYTHON:3.9> --sku <B1>
+9. I had already used an old resource group.
+10. Finally, I pasted this code: az webapp up --resource-group <groupname> --name <app-name> --runtime <PYTHON:3.9> --sku <B1>
    for groupname I changed it to my resource groupname, which is Fahima504 and for app-name I made up Fahima-flask-app-video.
-9. I remembered to remove these symbols <>, because I recall they gave me an error previously.
-10. FINALLY, I pasted this code to re-deploy: az webapp up
-11. My deployment was succeccful. 
+11. I remembered to remove these symbols <>, because I recall they gave me an error previously.
+12. FINALLY, I pasted this code to re-deploy: az webapp up
+13. My deployment was succeccful. 
 
   
 ## Your observations and benefits of using a CDN and cloud deployment.
